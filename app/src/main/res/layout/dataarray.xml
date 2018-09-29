@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/SensorName"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:textAlignment="center"
+        android:background="@drawable/texyviewborder"
+        android:textColor="@color/blue"
+         android:textSize="12sp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/SensorValue"
+        android:layout_width="0dp"
+        android:layout_weight="2.5"
+        android:textAlignment="center"
+        android:background="@drawable/texyviewborder"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        android:layout_height="wrap_content" />
+    <TextView
+    android:id="@+id/SensorUnit"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+        android:textAlignment="center"
+        android:background="@drawable/texyviewborder"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+    android:layout_height="wrap_content" />
+
+</LinearLayout>

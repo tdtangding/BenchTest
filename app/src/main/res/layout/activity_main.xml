@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/receive_message"
+            android:layout_width="match_parent"
+            android:textSize="12sp"
+            android:layout_height="35dp"
+            android:background="@drawable/texyviewborder"
+            android:textColor="@color/red"
+            android:hint="系统消息"
+            android:textAlignment="center"
+            android:maxLines="2"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+
+            android:scrollbarStyle="insideOverlay"
+            android:padding="10dp"
+            android:scrollbarFadeDuration="2000"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <EditText
+        android:id="@+id/IPAddress"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:hint="@string/IPAddress" />
+    <EditText
+        android:id="@+id/Port"
+        android:hint="@string/Port"
+        android:textSize="12sp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:textAlignment="center"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/DevIDSend"
+        android:hint="设备ID号"
+        android:textSize="12sp"
+        android:layout_width="0dp"
+        android:layout_weight="1.5"
+        android:textAlignment="center"
+
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/connect"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/connect"
+            android:text="@string/connect"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/disconnect"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/disconnect"
+            android:text="@string/disconnect" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/DevIDN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设备ID号"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/TestTimeN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/time"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/DevID"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/texyviewborder"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:id="@+id/TestTime"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/texyviewborder"
+            android:textColor="@color/blue"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/DevNameN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设备名称"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/DevStatusN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="设备状态"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/DevName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/texyviewborder"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:id="@+id/DevStatus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/texyviewborder"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TestNameN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="试验项目名称"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/TestDescriptionN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="试验项目描述"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:id="@+id/TestName"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/texyviewborder"
+            android:textColor="@color/blue"/>
+        <TextView
+            android:id="@+id/TestDescription"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/texyviewborder"
+            android:textColor="@color/blue"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/FaultIDN"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:text="错误ID"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/FaultDescriptionN"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="错误描述"
+            android:textAlignment="center"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/FaultID"
+            android:layout_width="0dp"
+            android:layout_weight="0.5"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/texyviewborder"
+
+            android:textColor="@color/blue"/>
+
+        <TextView
+            android:id="@+id/FaultDescription"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:background="@drawable/texyviewborder"
+            android:textColor="@color/blue"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:orientation="horizontal">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/zhycjgV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/lime"
+            />
+
+        <TextView
+            android:id="@+id/zhycjg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="最后结果"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/TestStatusV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/lime"
+            />
+        <TextView
+            android:id="@+id/TestStatus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="测试状态"
+            android:textColor="@color/black"/>
+        <TextView
+            android:id="@+id/FaultStatusV"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/lime"
+            />
+        <TextView
+            android:id="@+id/FaultStatus"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="错误状态"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/Start"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:textSize="12sp"
+            android:drawableLeft="@drawable/start1"
+            android:text="@string/start" />
+
+        <Button
+            android:id="@+id/Stop"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:drawableLeft="@drawable/stop1"
+            android:text="@string/stop"
+            android:textSize="12sp" />
+        <Button
+            android:id="@+id/Clear"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:textSize="12sp"
+            android:textAlignment="center"
+            android:drawableLeft="@drawable/clear"
+            android:text="清除消息" />
+    </LinearLayout>
+
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</LinearLayout>
